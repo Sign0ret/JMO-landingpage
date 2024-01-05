@@ -26,7 +26,7 @@ export const Nav = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
           <div className="bg-[rgba(255,255,255,0.2)] p-8 text-black">
             <h1 className="text-4xl font-bold">Your Text Here</h1>
-            <p className="mt-4 text-lg">Additional description or content</p>
+            <p className="mt-4 text-lg text-red-500">Additional description or content</p>
           </div>
         </div>
       </div>
