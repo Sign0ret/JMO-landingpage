@@ -1,17 +1,12 @@
+import { Navbar } from "./navbar";
+
 export const Nav = () => {
 
   return (
     <main key="1" className="flex flex-col w-full min-h-screen p-4 md:p-8 bg-[rgb(20,20,20)] text-[rgb(255,255,255)]">
-      <nav className="fixed left-80 right-80 mx-auto w-20% top-4 bg-[rgba(20,20,20,0.6)] z-10">
-        <div className="flex justify-center p-4">
-          <p className="mx-4 hover:pointer cursor-pointer">JMO arquitectos</p>
-          <p className="mx-4 hover:pointer cursor-pointer">Nosotros</p>
-          <p className="mx-4 hover:pointer cursor-pointer text-lg">Casas</p>
-          <p className="mx-4 hover:pointer cursor-pointer text-lg">Contacto</p>
-        </div>
-      </nav>
+      <Navbar/>
       {/* Slide 1 */}
-      <div id="slide1" className={`h-screen bg-red-500  inset-0 w-screen}`}>
+      <div id="slide1" className={`h-screen bg-red-600  inset-0 w-screen}`}>
         <img src="next.svg" alt="Slide 1"></img>
       </div>
       {/* Slide 2 */}
