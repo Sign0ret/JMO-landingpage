@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Videos de fondo
+/public/edificio_canc.MP4
+/public/playita.MP4
