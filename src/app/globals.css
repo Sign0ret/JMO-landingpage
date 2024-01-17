@@ -5,3 +5,27 @@
 #labs{
     font-size: 0.6rem;
 }
+
+body {
+    background-color: black; 
+    margin: 0; 
+    padding: 0; 
+  }
+
+@layer components{
+
+    .end-cursor:after{
+        content: '|';
+        @apply text-sky-300;
+    }
+
+    .end-cursor.blinking:after{
+        animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0;
+        }
+    }
+}
