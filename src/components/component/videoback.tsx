@@ -10,9 +10,7 @@ export const VideoBackground: React.FC<VideoBackgroundProps> = ({ videoSource })
                 <div className=''>
                     <video autoPlay muted loop id="background-video" className="object-cover w-full h-full absolute inset-0">
                     <source src={videoSource} type="video/mp4" />
-                    <div className='absolute text-white w-full h-full top-0 flex flex-col justify-center'>
-                        Hola a todos 
-                    </div>
+                    
                     </video>
                 </div>
             </div>
