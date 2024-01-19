@@ -29,3 +29,35 @@ body {
         }
     }
 }
+
+
+.sticky_parent {
+    height: 500vh;
+}
+
+.sticky {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    
+}
+
+.scroll_section {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 500vw;
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.hori-img {
+    width: 400px;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
