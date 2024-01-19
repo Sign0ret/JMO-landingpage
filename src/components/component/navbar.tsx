@@ -11,7 +11,7 @@ export const Navbar = () => {
       {name: "JMO ARQUITECTOS",link:"/"},
       {name: "NOSOTROS",link:"/"},
       {name: "CASAS",link:"/"},
-      {name: "CONTACTO",link:"/"}, 
+      {name: "CONTACTO",link:"/"},  
     ];
 
     let [open,setOpen]= useState(false);
