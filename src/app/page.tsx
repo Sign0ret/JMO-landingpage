@@ -6,6 +6,7 @@ import './globals.css'
 import { Typing } from '@/components/component/typing'
 import { Scrolling_H } from '@/components/component/scroll_hori'
 import { ComingSoon } from '@/components/component/coming_soon'
+import { Footer } from '@/components/component/footer'
 
 export default function Home() {
   return (
@@ -38,7 +39,7 @@ export default function Home() {
           </section>
         </section>
         <footer>
-
+          <Footer/>
         </footer>
       </main>
     </body>
