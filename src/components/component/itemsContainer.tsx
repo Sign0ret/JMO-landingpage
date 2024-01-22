@@ -10,7 +10,7 @@ export const ItemsContainer = () => {
       <div>
         <span className="text-xs">SUSCRÍBASE A NUESTRA LISTA DE CORREO</span>
         <div className="pb-8 pt-2">
-        <input type="email" placeholder="EMAIL*" className="bg-gray-200 text-xs border-b-2 border-gray-400 pb-3 focus:outline-none pr-64 md:pr-52 lg:pr-64 sm:pr-32 transition-all duration-300" />
+        <input type="email" placeholder="EMAIL*" className="bg-gray-200 text-xs border-b-2 border-gray-400 pb-3 focus:outline-none pr-4 md:pr-52 lg:pr-64 sm:pr-32 transition-all duration-300" />
         </div>
         <label className="flex items-center space-x-2 cursor-pointer max-w-fit max-h-6">
           <div className="checkbox-container">

@@ -31,7 +31,7 @@ export default function Home() {
         <section className=''>
           <div className='h-screen bg-white'>
             
-            <Present estiloPersonalizado='text-black w-full h-screen flex-col mt-8 text-center font-sans pt-52'/>
+            <Present estiloPersonalizado='text-black w-full h-screen flex-col mt-8 text-center font-sans pt-10 justify-center'/>
             
           </div>
           <section>

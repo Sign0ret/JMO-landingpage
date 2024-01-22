@@ -23,10 +23,10 @@ export const Scrolling_H = () => {
     }
  */
     return (
-        <main>
+        <main className=''>
             <div className="sticky_parent">
                 {images.map((img, imgIndex) => (
-                <div key={imgIndex} className="sticky">
+                <div key={imgIndex} className="sticky z-[-2]">
                     <div className="scroll_section">
                         <img className='hori-img' src={img} alt={`Image ${imgIndex + 1}`} />
                     </div>
