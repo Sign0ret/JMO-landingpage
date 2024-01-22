@@ -40,8 +40,7 @@ export const Navbar = () => {
             {
               Links.map((link)=>(
                 <li key={link.name} className="md:ml-5 md:my-0 my-6 lg:ml-2">
-                  <a href={link.link} className="text-white hover:text-gray-600 transition-all duration-500 group relative lg:text-xs">
-                    <span className="hidden group-hover:block w-2 h-2 rounded-full bg-non bg-opacity-40"></span>
+                  <a href={link.link} className="text-white relative lg:text-xs addDot">
                     {link.name}</a>
                 </li>
               ))
