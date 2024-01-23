@@ -16,20 +16,22 @@ export default function Home() {
           <Navbar/>
         </header>
         <section className=''>
-          
+
           <VideoBackground videoSource="edif_can.mp4" />
           <ComingSoon/>
-          <div className='h-screen bg-white'>
+          <div id='jmo_arqui' className='h-screen bg-white'>
             <Typing/>
             
           </div>
-          <VideoBackground videoSource="playa_edif.mp4" />
+          <div id='nosotros'>
+            <VideoBackground videoSource="playa_edif.mp4" />
+          </div>
         </section>
-        <section>
+        <section id='casas'>
           <Scrolling_H/>
         </section>
         <section className=''>
-          <div className='h-screen bg-white'>
+          <div id='contacto' className='h-screen bg-white'>
             
             <Present estiloPersonalizado='text-black w-full h-screen flex-col mt-8 text-center font-sans pt-10 justify-center'/>
             
@@ -38,7 +40,7 @@ export default function Home() {
           
           </section>
         </section>
-        <footer>
+        <footer id=''>
           <Footer/>
         </footer>
       </main>
