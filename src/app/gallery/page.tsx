@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export default function Gallery() {
-  const [urls, setUrls] = useState(null);
+  const [urls, setUrls] = useState<Array<string> | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,7 +24,7 @@ export default function Gallery() {
 
   return (
     <div>
-      {urls && urls.map((url, index) => (
+      {urls && urls?.map((url, index) => (
         <img key={index} className='w-1/3' src={url} alt={`Image ${index}`} />
       ))}
     </div>

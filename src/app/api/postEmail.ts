@@ -1,14 +1,18 @@
 'use server'
+// Assuming emailToUpload is a string representing email data
+
 export const PostEmail = async (emailToUpload: string): Promise<null | string> => {
   if (!emailToUpload) {
-    alert('Please select a file');
+    alert('Please provide email data');
     return null;
   }
-  console.log('emailToUpload:',emailToUpload)
-  console.log('ruta:',`${process.env.NEXT_PUBLIC_SERVER_URL}/api/emails`)
+
+  console.log('emailToUpload:', emailToUpload);
+  console.log('ruta:', `${process.env.NEXT_PUBLIC_SERVER_URL}/api/emails`);
+
   try {
     const formData = new FormData();
-    formData.append('email', emailToUpload); // Assuming 'emailToUpload' is the actual email data
+    formData.append('email', emailToUpload);
 
     const resp = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/emails`, {
       method: 'POST',
@@ -23,10 +27,11 @@ export const PostEmail = async (emailToUpload: string): Promise<null | string> =
     const data = await resp.json();
     const idMedia = data.doc.id;
     if (idMedia && resp.ok) {
-      return idMedia;
+      return idMedia.toString(); // Assuming idMedia is a string, adjust as needed
     }
   } catch (error: unknown) {
     console.error('Error uploading email:', error);
   }
+
   return null;
 };

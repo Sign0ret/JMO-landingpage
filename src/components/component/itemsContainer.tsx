@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Items } from "./items";
-import { PostEmail } from "@/app/api/postEmail/route";
+import { PostEmail } from "@/app/api/postEmail";
 
 export const ItemsContainer = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState<string>('');
   const [isChecked, setIsChecked] = useState(false);
 
   const postEmail = async () => {

@@ -37,7 +37,7 @@ export const Navbar = () => {
             <li className="md:ml-5 md:my-0 my-6 lg:ml-2"><Link to="nosotros" spy={true} smooth={true} offset={50} duration={500}  className="text-white cursor-pointer relative lg:text-xs addDot">NOSOTROS</Link></li>
             <li className="md:ml-5 md:my-0 my-6 lg:ml-2"><Link to="casas" spy={true} smooth={true} offset={50} duration={500}  className="text-white cursor-pointer relative lg:text-xs addDot">CASAS</Link></li>
             <li className="md:ml-5 md:my-0 my-6 lg:ml-2"><Link to="contacto" spy={true} smooth={true} offset={50} duration={500}  className="text-white cursor-pointer relative lg:text-xs addDot">CONTACTO</Link></li>
-            <li className="md:ml-5 md:my-0 my-6 lg:ml-2"><a href="/" className="text-white relative lg:text-xs addDot">GALERIA</a></li>
+            <li className="md:ml-5 md:my-0 my-6 lg:ml-2"><a href="/gallery" className="text-white relative lg:text-xs addDot">GALERIA</a></li>
 
           </ul>
         </div>
