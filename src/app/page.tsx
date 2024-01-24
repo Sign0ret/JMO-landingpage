@@ -7,6 +7,7 @@ import { Typing } from '@/components/component/typing'
 import { Scrolling_H } from '@/components/component/scroll_hori'
 import { ComingSoon } from '@/components/component/coming_soon'
 import { Footer } from '@/components/component/footer'
+import { ScrollHeader } from '@/components/component/scroll_header'
 
 export default function Home() {
   return (
@@ -25,6 +26,11 @@ export default function Home() {
           </div>
           <div id='nosotros'>
             <VideoBackground videoSource="playa_edif.mp4" />
+          </div>
+        </section>
+        <section>
+          <div className=''>
+            <ScrollHeader/>
           </div>
         </section>
         <section id='casas'>
