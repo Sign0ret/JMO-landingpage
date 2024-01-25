@@ -5,14 +5,12 @@ type Position = "static" | "relative" | "absolute" | "sticky" | "fixed" | "initi
 import React, { useEffect, useState } from "react";
 
 export const ScrollHeader = () => {
-  // State variables
   const [isFixed, setIsFixed] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [scrollY, setScrollY] = useState(0.001);
   const [fixed, setFixed] = useState(false);
   const [titleSize, setTitleSize] = useState(288);
 
-  // Effect for handling scroll
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -35,23 +33,22 @@ export const ScrollHeader = () => {
     };
   }, []);
 
-  // Styles for the title
-  const titlePosition: Position = fixed ? "fixed" : "absolute";
+  const titlePosition = fixed ? "fixed top-0 left-0 right-0" : "";
+
   const stickyStyles: React.CSSProperties = {
     position: isFixed ? "absolute" : isSticky ? "fixed" : "absolute",
     top: isFixed ? "2530px" : isSticky ? "450px" : "300px",
-    left: "43px",
+    left: "42px",
     transition: "all 0s ease-in-out",
   };
 
-  // Render component
   return (
     <div className="sticky_parent bg-white relative h-screen flex flex-col items-center justify-center overflow-hidden z-[-2]">
       <div
         className={`transition-all duration-100 ${titlePosition}`}
         style={{
           backgroundColor: fixed ? "white" : "transparent",
-          height: fixed ? "10rem" : "217vh",
+          height: fixed ? "10rem" : "220vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
