@@ -39,7 +39,7 @@ export const ScrollHeader = () => {
   const titlePosition: Position = fixed ? "fixed" : "absolute";
   const stickyStyles: React.CSSProperties = {
     position: isFixed ? "absolute" : isSticky ? "fixed" : "absolute",
-    top: isFixed ? "2530px" : isSticky ? "450px" : "600px",
+    top: isFixed ? "2530px" : isSticky ? "450px" : "300px",
     left: "43px",
     transition: "all 0s ease-in-out",
   };
