@@ -24,11 +24,32 @@ export const Scrolling_H = () => {
  */
     return (
         <main className=''>
+            <div className=' text-white absolute left-[850px] text-6xl max-w-[500px] pt-72 space-y-[650px] z-[-2]'>
+                <div className=''>Esta casa es la de tus sueños ???
+                <br />
+                <a className='font-serif' href="https://www.instagram.com/jorgeblasquezjjbg_/">Soy un Link</a> 
+                </div>
+                <div className=''>O esta ?
+                <br />
+                <a className='font-serif' href="https://www.instagram.com/jorgeblasquezjjbg_/">Soy un Link</a> 
+                </div>
+                <div className=''>O esta ???
+                <br />
+                <a className='font-serif' href="https://www.instagram.com/jorgeblasquezjjbg_/">Soy un Link</a> 
+                </div>
+                <div className=''>O estaaaaa !!!!
+                <br />
+                <a className='font-serif' href="https://www.instagram.com/jorgeblasquezjjbg_/">Soy un Link</a> 
+                </div>
+            </div>
             <div className="sticky_parent">
+            
                 {images.map((img, imgIndex) => (
                 <div key={imgIndex} className="sticky z-[-2]">
+                    
                     <div className="scroll_section">
                         <img className='hori-img' src={img} alt={`Image ${imgIndex + 1}`} />
+                        
                     </div>
                 </div>
                 ))}

@@ -8,6 +8,7 @@ import { Scrolling_H } from '@/components/component/scroll_hori'
 import { ComingSoon } from '@/components/component/coming_soon'
 import { Footer } from '@/components/component/footer'
 import { ScrollHeader } from '@/components/component/scroll_header'
+import Contactanos from '@/components/component/contactanos'
 
 export default function Home() {
   return (
@@ -37,13 +38,13 @@ export default function Home() {
           <Scrolling_H/>
         </section>
         <section className=''>
-          <div id='contacto' className='h-screen bg-white'>
+          <div className='h-screen bg-white'>
             
             <Present estiloPersonalizado='text-black w-full h-screen flex-col mt-8 text-center font-sans pt-10 justify-center'/>
             
           </div>
-          <section>
-          
+          <section id='contacto'>
+          <Contactanos/>
           </section>
         </section>
         <footer id=''>
