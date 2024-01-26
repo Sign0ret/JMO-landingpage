@@ -38,12 +38,12 @@ export default function Gallery() {
       <header>
         <Navbar />
       </header>
-      <section className='grid grid-cols-4 gap-4 p-4'>
+      <section className='grid grid-cols-1 gap-4 p-4 pl-14 lg:grid-cols-4 lg:pl-10 md:grid-cols-2'>
         <div className='text-white text-3xl text-center mt-28'> Cuadrito reservado para informacion y texto</div>
         <a href="https://www.instagram.com/jorgeblasquezjjbg_/">
           <img src="insta.webp" alt="Instagram" className='post w-80 h-80' />
         </a>
-        {loading && <p className='text-white text-9xl text-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>Loading...</p>}
+        {loading && <p className='text-white md:text-9xl text-6xl text-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>Loading...</p>}
         {error && <p>{error}</p>}
         {urls &&
           urls.map((url, index) => (
