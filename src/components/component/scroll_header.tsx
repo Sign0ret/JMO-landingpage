@@ -43,33 +43,57 @@ export const ScrollHeader = () => {
   };
 
   return (
-    <div className="sticky_parent bg-white relative h-screen flex flex-col items-center justify-center overflow-hidden z-[-2]">
-      <div
-        className={`transition-all duration-100 ${titlePosition}`}
-        style={{
-          backgroundColor: fixed ? "white" : "transparent",
-          height: fixed ? "10rem" : "220vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontSize: `${titleSize}px`,
-        }}
-      >
-        <div style={stickyStyles}>Arquitectos Lab.</div>
-      </div>
+    <main>
+      <section className="hidden lg:block">
+        <div className="sticky_parent bg-white relative h-screen flex flex-col items-center justify-center overflow-hidden z-[-2]">
+          <div
+            className={`transition-all duration-100 ${titlePosition}`}
+            style={{
+              backgroundColor: fixed ? "white" : "transparent",
+              height: fixed ? "10rem" : "220vh",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: `${titleSize}px`,
+            }}
+          >
+            <div style={stickyStyles}>Arquitectos Lab.</div>
+          </div>
 
-      <div className="grid grid-cols-2 items-center justify-center mt-96">
-        <p className="text-5xl text-left pl-10 text-gray-400 max-w-fit ">
-          Como líder en nuestro despacho de arquitectura,
-          creamos visiones audaces que fusionan innovación y belleza.
-          Transformamos sueños en estructuras icónicas, trascendiendo
-          límites para inspirar el mundo.
-        </p>
-        <div>
-          <table>{/* Add your table content here */}</table>
+          <div className="grid grid-cols-2 items-center justify-center mt-96">
+            <p className="text-5xl text-left pl-10 text-gray-400 max-w-fit ">
+              Como líder en nuestro despacho de arquitectura,
+              creamos visiones audaces que fusionan innovación y belleza.
+              Transformamos sueños en estructuras icónicas, trascendiendo
+              límites para inspirar el mundo.
+            </p>
+            <div>
+              <table>{/* Add your table content here */}</table>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+
+      <section className="block lg:hidden">
+        <div className=" bg-white relative h-screen flex flex-col items-center md:items-start justify-center overflow-hidden z-[-2]">
+          <div className="max-w-[350px] md:max-w-[550px]">
+            <div className="text-5xl md:text-7xl font-mono px-6 py-2"> JMO Arquitectos</div>
+              
+                <p className="text-4xl pl-10 text-gray-400">
+                  Como líder en nuestro despacho de arquitectura,
+                  creamos visiones audaces que fusionan innovación y belleza.
+                  Transformamos sueños en estructuras icónicas, trascendiendo
+                  límites para inspirar el mundo.
+                </p>
+      
+              <div>
+                <table>{/* Add your table content here */}</table>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
   );
 };
 

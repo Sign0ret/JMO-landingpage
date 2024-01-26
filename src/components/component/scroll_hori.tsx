@@ -37,7 +37,7 @@ export const Scrolling_H = () => {
                 </div>
                 ))}
             </div>
-            <div className=' text-white left-[850px] text-3xl sm:text-5xl md:text-6xl lg:text-7xl pl-5 max-w-[500px] pt-72 lg:space-y-[530px] space-y-[750px]'>
+            <div className=' text-white left-[850px] text-3xl sm:text-5xl md:text-6xl lg:text-7xl pl-5 max-w-[500px] pt-72 lg:space-y-[530px] md:space-y-[460px] space-y-[750px]'>
                 <div className=''>Esta casa es la de tus sueños ???
                 <br />
                 <a href="https://www.instagram.com/jorgeblasquezjjbg_/">
