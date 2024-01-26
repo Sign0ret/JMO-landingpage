@@ -40,19 +40,27 @@ export const Scrolling_H = () => {
             <div className=' text-white left-[850px] text-3xl sm:text-5xl md:text-6xl lg:text-7xl pl-5 max-w-[500px] pt-72 space-y-[530px]'>
                 <div className=''>Esta casa es la de tus sueños ???
                 <br />
-                <a className='font-serif hover:text-blue-500 hover:underline duration-300' href="https://www.instagram.com/jorgeblasquezjjbg_/">Soy un Link</a> 
+                <a href="https://www.instagram.com/jorgeblasquezjjbg_/">
+                <button className='py-2 px-6 rounded-full hover:bg-gray-600 duration-300'>Ir a ver</button> 
+                </a>
                 </div>
                 <div className=''>O esta ?
                 <br />
-                <a className='font-serif hover:text-blue-500 hover:underline duration-300' href="https://www.instagram.com/jorgeblasquezjjbg_/">Soy un Link</a> 
+                <a href="https://www.instagram.com/jorgeblasquezjjbg_/">
+                    <button className='py-2 px-6 rounded-full hover:bg-gray-600 duration-300'>Ir a ver</button>
+                </a> 
                 </div>
                 <div className=''>O esta ???
                 <br />
-                <a className='font-serif hover:text-blue-500 hover:underline duration-300' href="https://www.instagram.com/jorgeblasquezjjbg_/">Soy un Link</a> 
+                <a href="https://www.instagram.com/jorgeblasquezjjbg_/">
+                    <button className='py-2 px-6 rounded-full hover:bg-gray-600 duration-300'>Ir a ver</button>
+                </a> 
                 </div>
                 <div className=''>O estaaaaa !!!!
                 <br />
-                <a className='font-serif hover:text-blue-500 hover:underline duration-300' href="https://www.instagram.com/jorgeblasquezjjbg_/">Soy un Link</a> 
+                <a href="https://www.instagram.com/jorgeblasquezjjbg_/">
+                    <button className='py-2 px-6 rounded-full hover:bg-gray-600 duration-300'>Ir a ver</button>
+                </a> 
                 </div>
             </div>
         </main>

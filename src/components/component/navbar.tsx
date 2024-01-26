@@ -22,8 +22,8 @@ export const Navbar = () => {
                 alt="Logo"
                 className="h-7 w-auto mr-2 ml-1"  // Puedes ajustar la altura (h-7) según tus necesidades
               /> */}
-              <span className="text-white lg:text-">ARQUITECTOS</span>
-              <span id="labs" className="text-white size-5 text-xs md:ml-0.5 mr-6 ">LAB&apos;s</span>
+              <span className="text-white lg:text-">JMO ARQUITECTOS</span>
+              {/* <span id="labs" className="text-white size-5 text-xs md:ml-0.5 mr-6 ">LAB&apos;s</span> */}
             </div> 
           </a>
           <div onClick={()=>setOpen(!open)} className="absolute right-4 top-3 cursor-pointer md:hidden">

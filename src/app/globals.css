@@ -131,15 +131,14 @@ body {
  
 .post {
     transition: all 0.3s ease;
-    background-color: #ffff;
     margin: 1rem 0;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 0;
     cursor: pointer;
     animation: bounce 1s infinite; /* Aplicar la animación de rebote */
 }
 
 .post:hover {
-    box-shadow: 0 0.1rem 0.4rem rgb(0, 0, 0, 0.3);
+    box-shadow: 0 0.1rem 2rem rgb(255, 255, 255);
     animation: none; /* Detener la animación al hacer hover */
 }
