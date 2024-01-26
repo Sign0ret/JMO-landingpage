@@ -19,7 +19,7 @@ export default function Home() {
         </header>
         <section className=''>
 
-          <VideoBackground videoSource="edif_can.mp4" />
+          <VideoBackground videoSource="playita2.mp4" />
           <ComingSoon/>
           <div id='jmo_arqui' className='h-screen bg-white'>
             <Typing/>
