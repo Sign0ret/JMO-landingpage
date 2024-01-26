@@ -38,7 +38,7 @@ export default function Gallery() {
       <header>
         <Navbar />
       </header>
-      <section className='grid grid-cols-1 gap-4 p-4 pl-14 lg:grid-cols-4 lg:pl-10 md:grid-cols-2'>
+      <section className='grid grid-cols-1 gap-4 p-4 pl-10 lg:grid-cols-4 lg:pl-10 md:grid-cols-2'>
         <div className='text-white text-3xl text-center mt-28'> Cuadrito reservado para informacion y texto</div>
         <a href="https://www.instagram.com/jorgeblasquezjjbg_/">
           <img src="insta.webp" alt="Instagram" className='post w-80 h-80' />
