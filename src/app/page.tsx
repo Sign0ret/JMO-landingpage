@@ -8,7 +8,8 @@ import { Scrolling_H } from '@/components/component/scroll_hori'
 import { ComingSoon } from '@/components/component/coming_soon'
 import { Footer } from '@/components/component/footer'
 import { ScrollHeader } from '@/components/component/scroll_header'
-import Contactanos from '@/components/component/contactanos'
+import Contact from '@/components/component/contact'
+import Contact_us from '@/components/component/contact_us'
 
 export default function Home() {
   return (
@@ -44,7 +45,10 @@ export default function Home() {
             
           </div>
           <section id='contacto'>
-          <Contactanos/>
+          <Contact/>
+          </section>
+          <section>
+            <Contact_us/>
           </section>
         </section>
         <footer id=''>

@@ -2,7 +2,7 @@
 import React from 'react'
 
 
-export default function Contactanos() {
+export default function Contact() {
     
 
     
