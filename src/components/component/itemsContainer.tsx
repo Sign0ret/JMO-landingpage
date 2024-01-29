@@ -35,7 +35,7 @@ export const ItemsContainer = () => {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:px-8 px-5 py-16 items-center">
-      <div>
+      <div className=''>
         <span className="text-xs">SUSCRÍBASE A NUESTRA LISTA DE CORREO</span>
         <div className="pb-8 pt-2">
           <input
