@@ -27,17 +27,33 @@ export default function Gallery_casas() {
       <header>
         <Navbar />
       </header>
-      <section className='grid grid-cols-1 gap-4 p-4 pl-9 lg:grid-cols-4 lg:pl-10 md:grid-cols-2'>
-        <div className='text-white text-3xl text-center mt-28'> Casa Elantis <br /> Precio: $21M mx <br /> Terreno: 721m^2 <br /> Ubicacion: GDL</div>
-        {images.map((img, imgIndex) => (
-            <img 
-              key={imgIndex}
-              className='post w-80 h-80'
-              src={img}
-              alt={`Image ${imgIndex + 1}`}
-              
-            />
-          ))}
+      <section className=''>
+        
+        <section className='grid grid-cols-1 gap-4 p-4 pl-9 lg:grid-cols-2 lg:pl-10 md:grid-cols-2'>
+          <section className='grid grid-cols-1'>
+            <img src="https://dr.savee-cdn.com/things/thumbnails/6/4/b014f6fb7f6446b7c6117d.webp" alt="Casa" className='post w-[650px] h-[650px]'/>
+            {images.map((img, imgIndex) => (
+              <img 
+                key={imgIndex}
+                className='post w-80 h-80'
+                src={img}
+                alt={`Image ${imgIndex + 1}`}
+                
+              />
+            ))}
+          </section>
+          <div className='grid grid-cols-2'>
+            {images.map((img, imgIndex) => (
+                <img 
+                  key={imgIndex}
+                  className='post w-80 h-80'
+                  src={img}
+                  alt={`Image ${imgIndex + 1}`}
+                  
+                />
+              ))}
+            </div>
+        </section>
       </section>
     </main>
   );

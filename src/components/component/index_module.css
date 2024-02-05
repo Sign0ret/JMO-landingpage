@@ -1,0 +1,221 @@
+.zonaPeligro {
+    background-color: black;
+    border: 1px solid white;
+    padding: 20px; /* // Adjust padding as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .zonaPeligro p:first-child {
+    flex-basis: 70%;
+  }
+  
+  .zonaPeligro button {
+    flex-basis: 30%; /* // Set the width of the button to 30% */
+    margin-left: auto; /* // Push the button to the left */
+    margin-right: 20px;
+    background-color: #8B0000;
+    color: black;
+    padding: 8px 12px; /* // Adjust padding as needed */
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .zonaPeligro button:hover {
+    background-color: transparent;
+    color: #8B0000;
+  }
+  
+  .zonaPeligro p:last-child,
+  .zonaPeligro button {
+    margin: 0; /*Elimina cualquier margen del párrafo o el botón */
+  }
+
+
+/* // Variables
+$primaryColor: #009688;
+$darkBackgroundColor: #000000;
+$borderColor: #003366;
+$lightTextColor: #ccc; */
+
+.modaloverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* Ensure it appears above other elements */
+  
+}
+
+.modal {
+  width: 80%;
+  max-width: 650px;
+  height: 90%;
+  max-height: 90%;
+  background-color: #000000;
+  padding: 4%;
+  border: 1px solid #003366;
+  border-radius: 8px;
+  margin: 3%;
+  transition: all 0.3s ease;
+  color: #FFFFFF;
+  overflow-y: auto; /* Allow vertical scrolling within the modal */
+
+  .resalte{
+    color: #009688;
+    font: bold;
+    font-size: larger;
+  }
+
+  .formItem {
+    margin: 2%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .title{
+        margin-bottom: 8px;
+        font-size: 22px;
+      }
+
+    .title_ul {
+      text-align: left;
+      margin-bottom: 8px;
+      font-size: 25px;
+      list-style-type: none;
+    }
+
+    ul{
+      border-radius: 4px;
+      border-left: 4px solid #0230ff;
+      background: #303a817c;
+      padding: 4%;
+      margin: 0%;
+      list-style-type: square;
+      font-size: 18px;
+    }
+
+    .ul_element{
+      position: relative;
+      left: 20px;
+    }
+
+    
+    .alert{
+      background: #e9a93a47;
+      padding: 20px 20px;
+      border-radius: 4px;
+      border-left: 4px solid #ffa502;
+      font-size: 18px;
+    }
+
+    .alert_text{
+      padding-left: 0.25rem;
+    }
+    .alert_space{
+      display: flex;
+      padding-bottom: 0.5rem;
+    }
+    
+    .image {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #444;
+      border-radius: 5px;
+      background-color: #333;
+      color: #FFF;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  }
+
+  .actions1 {
+    
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px 80px;
+    border: none;
+    border-radius: 5px;
+    background-color: #009688;
+    color: #FFF;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    margin: 5%;
+      
+  }
+  .actions2 {
+    
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px 80px;
+    border: none;
+    border-radius: 5px;
+    background-color: #009688;
+    color: #FFF;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+      
+  }
+  .actions1:hover {
+    background-color: #19e31f;
+  }
+  .actions2:hover {
+    background-color: #cc201a;
+  }
+
+
+  .imageContainer {
+    margin-top: 20px;
+
+    div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      span {
+        margin-left: 10px;
+        font-size: 14px;
+        color: #ccc;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+        .formItem {
+        flex-direction: column;
+        }
+
+        .actions {
+        flex-direction: column;
+
+        button {
+            margin-right: 0;
+            margin-top: 10px;
+            }
+        }
+    }
+}
+

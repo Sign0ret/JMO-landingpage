@@ -10,6 +10,9 @@ import { Footer } from '@/components/component/footer'
 import { ScrollHeader } from '@/components/component/scroll_header'
 import Contact from '@/components/component/contact'
 import Contact_us from '@/components/component/contact_us'
+import Handle_delete from '@/components/component/handle_delete'
+import Carrusel from '@/components/component/carrusel'
+
 
 export default function Home() {
   return (
@@ -49,6 +52,10 @@ export default function Home() {
           </section>
           <section>
             <Contact_us/>
+          </section>
+          <section>
+            <Carrusel/>
+            {/* <Handle_delete/> */}
           </section>
         </section>
         <footer id=''>
