@@ -37,8 +37,8 @@ export default function Carrusel() {
     ];
 
   return (
-    <div>
-        <ImageGallery items={images}
+    <div className='carrusel'>
+        <ImageGallery additionalClass='size' items={images}
         showPlayButton={false}
         showThumbnails={false}
         showBullets={true} 
