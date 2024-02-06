@@ -13,7 +13,7 @@ export const Navbar = () => {
 
     return (
       <nav id="navbar">
-        <div className="transition-all duration-500 shadow-md lg:shadow-none w-full left-0 right-0 top-0 fixed lg:top-5 lg:pr-52 lg:pl-52">
+        <div className="transition-all duration-500 shadow-md lg:shadow-none w-full left-0 right-0 top-0 fixed lg:top-5 lg:pr-52 lg:pl-52 z-40">
           <div className="md:flex items-center justify-between bg-black bg-opacity-15 py-4 md:px-10 px-2 backdrop-blur-sm">
             <a href="/">
               <div className="font-bold text-xl flex items-center cursor-pointer font-[Poppins]">
