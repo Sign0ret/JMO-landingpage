@@ -55,7 +55,7 @@ export default function Home() {
             <Contact_us/>
           </section>
           <section className='bg-white'>
-            {/* <Carrusel_map/> */}
+            <Carrusel_map/>
             {/* <Carrusel/> */}
             {/* <Handle_delete/> */}
           </section>

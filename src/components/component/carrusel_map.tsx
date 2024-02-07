@@ -9,6 +9,7 @@ enum SlideDirection {
 
 export default function Carrusel_map() {
     let images = [
+        '/nueva_casa.svg',
         'https://dr.savee-cdn.com/things/thumbnails/6/4/b014f6fb7f6446b7c6117d.webp',
         'https://dr.savee-cdn.com/things/thumbnails/5/c/940d2bb2f8dc4dd16351e6.webp',
         'https://dr.savee-cdn.com/things/thumbnails/6/4/bcb1e25d96d4e2d7b1f569.webp',
@@ -72,7 +73,7 @@ export default function Carrusel_map() {
                     {
                         images.map((item, itemIndex) => {
                             return <li key={itemIndex}>
-                                <img className='flex' src={item} alt={`Image ${itemIndex + 1}`} width={1600} height={280} />
+                                <img className='flex' src={item} alt={`Image ${itemIndex + 1}`} width={1600} height={580}/>
                             </li>
                         })
                     }
