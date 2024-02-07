@@ -12,6 +12,7 @@ import Contact from '@/components/component/contact'
 import Contact_us from '@/components/component/contact_us'
 import Handle_delete from '@/components/component/handle_delete'
 import Carrusel from '@/components/component/carrusel'
+import Carrusel_map from '@/components/component/carrusel_map'
 
 
 export default function Home() {
@@ -53,8 +54,9 @@ export default function Home() {
           <section>
             <Contact_us/>
           </section>
-          <section>
-            <Carrusel/>
+          <section className='bg-white'>
+            {/* <Carrusel_map/> */}
+            {/* <Carrusel/> */}
             {/* <Handle_delete/> */}
           </section>
         </section>
