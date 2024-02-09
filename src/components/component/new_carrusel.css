@@ -1,0 +1,108 @@
+/*Main container*/
+
+.main-container {
+    transition: all 0.3s ease;
+    padding-bottom: 30px;
+    width: 300px;
+    height: 400px;
+    max-width: 700px;
+    max-height: 700px;
+    margin: 20px auto;
+    animation: bounce 1s infinite; /* Aplicar la animación de rebote */
+    border-radius: 1.5rem;
+}
+
+.main-container:hover{
+    box-shadow: 0 0 1.7rem rgb(255, 255, 255);
+    animation: none; /* Detener la animación al hacer hover */
+}
+
+/* / Slider container / */
+.slider-container {
+  position: relative;
+  height: 100%;
+}
+
+/* / dots carrusel / */
+.dots-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot-container-item {
+    transition: all 0.6s ease;
+    margin: 7px 2px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    
+    
+}
+
+/* / Arrows / */
+.leftArrow {
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 14px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.leftArrow:active{
+    font-size: 65px;
+}
+
+.rightArrow {
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 14px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.rightArrow:active{
+    font-size: 65px;
+}
+
+
+.container-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 0px solid #eee;
+    overflow: hidden;
+    object-fit: contain;
+
+}
+
+div.active {
+    background: #717171;
+    width: 15px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+.image-list {
+  height: 100%;
+  align-items: center;
+  display: flex; /* / Utiliza flexbox para apilar horizontalmente / */
+  overflow-x: hidden; /* / Agrega una barra de desplazamiento horizontal si es necesario / */
+  overflow-y: hidden; /* / Oculta la barra de desplazamiento vertical / */
+  padding: 0; /* / Elimina el relleno predeterminado / */
+  list-style: none; /* / Elimina los puntos de la lista / */
+}
+
+.image-list li {
+  flex: 0 0 auto; /* / No se expande, no se encoge, tamaño automático */
+}
