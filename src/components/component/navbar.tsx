@@ -16,13 +16,8 @@ export const Navbar = () => {
         <div className="transition-all duration-500 shadow-md lg:shadow-none w-full left-0 right-0 top-0 fixed lg:top-5 lg:pr-52 lg:pl-52 z-40">
           <div className="md:flex items-center justify-between bg-black bg-opacity-15 py-4 md:px-10 px-2 backdrop-blur-sm">
             <a href="/">
-              <div className="font-bold text-xl flex items-center cursor-pointer font-[Poppins]">
-                {/* <img
-                  src="architectural.png"
-                  alt="Logo"
-                  className="h-7 w-auto mr-2 ml-1"  // Puedes ajustar la altura (h-7) según tus necesidades
-                /> */}
-                <span className="text-white lg:text-">JMO ARQUITECTOS</span>
+              <div className="font-bold text-xl flex items-center lg:hidden cursor-pointer font-[Poppins]">
+                <span className="text-white">JMO ARQUITECTOS</span>
                 {/* <span id="labs" className="text-white size-5 text-xs md:ml-0.5 mr-6 ">LAB&apos;s</span> */}
               </div> 
             </a>

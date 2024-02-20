@@ -13,6 +13,13 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        myWhite: '#FFFFFF', // Define your custom color
+        myBone: '#ccc',
+        myBlack: '#000000',
+        mySkin: '#ac9c8d',
+        myBackground: '#000000',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

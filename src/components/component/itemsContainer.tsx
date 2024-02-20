@@ -34,7 +34,7 @@ export const ItemsContainer = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:px-8 px-5 py-16 items-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:px-8 px-5 py-16 items-center bg-myBackground text-myWhite">
       <div className=''>
         <span className="text-xs">SUSCRÍBASE A NUESTRA LISTA DE CORREO</span>
         <div className="pb-8 pt-2">
@@ -43,7 +43,7 @@ export const ItemsContainer = () => {
             placeholder="EMAIL*"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="bg-gray-200 text-xs border-b-2 border-gray-400 pb-3 focus:outline-none pr-4 md:pr-52 lg:pr-64 sm:pr-32 transition-all duration-300"
+            className="bg-myBackground text-xs border-b-2 border-gray-400 pb-3 focus:outline-none pr-4 md:pr-52 lg:pr-64 sm:pr-32 transition-all duration-300 text-myBlack"
           />
         </div>
         <label className="flex items-center space-x-2 cursor-pointer max-w-fit max-h-6">
@@ -55,7 +55,7 @@ export const ItemsContainer = () => {
               onChange={handleCheckboxChange}
               className="hidden"
             />
-            <label htmlFor="miCheckbox" className="h-5 w-5 bg-white border border-black checkbox-label"></label>
+            <label htmlFor="miCheckbox" className="h-5 w-5 bg-myBlack border border-white checkbox-label"></label>
           </div>
           <span className="uppercase text-xs">Acepto los términos y condiciones de arquitectos lab&apos;s</span>
         </label>

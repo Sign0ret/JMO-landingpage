@@ -17,7 +17,7 @@ import Carrusel_map from '@/components/component/carrusel_map'
 
 export default function Home() {
   return (
-    <body className=''>
+    <body className='bg-myBlack'>
       <main>
         <header className=''>
           <Navbar/>
@@ -26,7 +26,7 @@ export default function Home() {
 
           <VideoBackground videoSource="playita2.mp4" />
           <ComingSoon/>
-          <div id='jmo_arqui' className='h-screen bg-white'>
+          <div id='jmo_arqui' className='h-screen bg-myBlack'>
             <Typing/>
             
           </div>
@@ -34,11 +34,11 @@ export default function Home() {
             <VideoBackground videoSource="playa_edif.mp4" />
           </div>
         </section>
-        <section>
+        {/* <section>
           <div className=''>
             <ScrollHeader/>
           </div>
-        </section>
+        </section> */}
         <section id='casas'>
           <Scrolling_H/>
         </section>
@@ -53,14 +53,12 @@ export default function Home() {
           </section>
           <section>
             <Contact_us/>
-          </section>
-          <section className='bg-white'>
+          </section >
+          {/* <section className='bg-white'>
             <Carrusel_map/>
-            {/* <Carrusel/> */}
-            {/* <Handle_delete/> */}
-          </section>
+          </section> */}
         </section>
-        <footer id=''>
+        <footer>
           <Footer/>
         </footer>
       </main>
