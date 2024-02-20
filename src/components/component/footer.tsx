@@ -1,6 +1,6 @@
 import React from "react";
 import { ItemsContainer } from "./itemsContainer";
-
+import Link from "next/link";
 
 export const Footer = () => {
     
@@ -10,7 +10,9 @@ export const Footer = () => {
         <ItemsContainer/>
         <div className="flex lg:justify-end justify-center px-16 py-2">
           <img className="w-14 h-14 mx-3 rounded-full cursor-pointer p-2 bg-myWhite hover:bg-myBone duration-300" src="/logo-facebook.svg" alt="Logo" />
-          <img className="w-14 h-14 mx-3 rounded-full cursor-pointer p-2 bg-myWhite hover:bg-myBone duration-300" src="/logo-instagram.svg" alt="Logo" />
+          <Link href='https://www.instagram.com/jmo_arquitectos/'>
+            <img className="w-14 h-14 mx-3 rounded-full cursor-pointer p-2 bg-myWhite hover:bg-myBone duration-300" src="/logo-instagram.svg" alt="Logo" />
+          </Link>
           <img className="w-14 h-14 mx-3 rounded-full cursor-pointer p-2 bg-myWhite hover:bg-myBone duration-300" src="/logo-youtube.svg" alt="Logo" />
           <img className="w-14 h-14 mx-3 rounded-full cursor-pointer p-2 bg-myWhite hover:bg-myBone duration-300" src="/logo-linkedin.svg" alt="Logo" />
         </div>
