@@ -11,7 +11,8 @@ export const Items = () => {
         <li className='addDot cursor-pointer hover:text-myBone duration-300 max-w-fit'> <Link to="nosotros" spy={true} smooth={true} offset={50} duration={500}>NOSOTROS</Link> </li>
         <li className='addDot cursor-pointer hover:text-myBone duration-300 max-w-fit'> <Link to="casas" spy={true} smooth={true} offset={50} duration={500}>CASAS</Link> </li>
         <li className='addDot cursor-pointer hover:text-myBone duration-300 max-w-fit'> <Link to="contacto" spy={true} smooth={true} offset={50} duration={500}>CONTACTO</Link> </li>
-        <li className='addDot cursor-pointer hover:text-myBone duration-300 max-w-fit'> <a href="/gallery">GALERIA</a></li>
+        {/* <li className='addDot cursor-pointer hover:text-myBone duration-300 max-w-fit'> <a href="/gallery">GALERIA</a></li> */}
+        <li className='addDot cursor-pointer hover:text-myBone duration-300 max-w-fit'> <a href="https://obra.jmoarquitectos.com/">BLOG OBRAS</a></li>
     </ul>
 
   )

@@ -26,9 +26,8 @@ export default function Home() {
 
           <VideoBackground videoSource="playita2.mp4" />
           <ComingSoon/>
-          <div id='jmo_arqui' className='h-screen bg-myBlack'>
+          <div id='jmo_arqui' className='h-screen'>
             <Typing/>
-            
           </div>
           <div id='nosotros'>
             <VideoBackground videoSource="playa_edif.mp4" />
@@ -43,9 +42,9 @@ export default function Home() {
           <Scrolling_H/>
         </section>
         <section className=''>
-          <div className='h-screen bg-white'>
+          <div className='h-screen bg-myBackground'>
             
-            <Present estiloPersonalizado='text-black w-full h-screen flex-col mt-8 text-center font-sans pt-10 justify-center'/>
+            <Present estiloPersonalizado='text-myWhite w-full h-screen flex-col mt-8 text-center font-sans pt-10 justify-center'/>
             
           </div>
           <section id='contacto'>

@@ -19,6 +19,7 @@ const config: Config = {
         myBlack: '#000000',
         mySkin: '#ac9c8d',
         myBackground: '#000000',
+        myGray: '#141414',
       },
     },
   },
