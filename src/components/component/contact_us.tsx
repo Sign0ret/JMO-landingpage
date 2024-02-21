@@ -14,10 +14,10 @@ export default function Contact_us() {
     }
 
   return (
-    <main className='bg-myBackground h-screen p-1 mb-10 font-[Poppins] box-border text-myWhite'>
+    <main className='bg-myBackground h-screen p-1 font-[Poppins] box-border text-myWhite'>
         
-        <form className='block bg-myBackground shadow-lg hover:shadow-2xl duration-300 m-10 mx-auto max-w-[600px] max-h-[700px] p-10 ' method='post' onSubmit={handleSubmit}>
-            <h1 className='text-4xl'>Contactanos<span className='text-myBone'> aquí</span></h1>
+        <form  className='block bg-myBackground shadow-lg hover:shadow-2xl duration-300 m-10 mx-auto max-w-[600px] max-h-[700px] px-10 py-0 ' method='post' onSubmit={handleSubmit}>
+            <h1 className='text-4xl' >Contáctanos<span className='text-myBone'> aquí</span></h1>
             <input className='flex flex-col w-full m-2.5 mx-auto  p-2 border border-slate-300 hover:border-slate-600 duration-300' type="text" name='name' id='' onChange={handleChange} value={data.name} placeholder='Nombre Completo' />
             <input className='flex flex-col w-full m-2.5 mx-auto  p-2 border border-slate-300 hover:border-slate-600 duration-300' type="email" name='email' id='' onChange={handleChange} value={data.email} placeholder='Correo Electronico'/>
             <input className='flex flex-col w-full m-2.5 mx-auto  p-2 border border-slate-300 hover:border-slate-600 duration-300' type="tel" name='phone' id='' onChange={handleChange} value={data.phone} placeholder='Numero de Telefono'/>

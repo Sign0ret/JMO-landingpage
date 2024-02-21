@@ -23,7 +23,6 @@ export default function Home() {
           <Navbar/>
         </header>
         <section className=''>
-
           <VideoBackground videoSource="playita2.mp4" />
           <ComingSoon/>
           <div id='jmo_arqui' className='h-screen'>
@@ -33,29 +32,19 @@ export default function Home() {
             <VideoBackground videoSource="playa_edif.mp4" />
           </div>
         </section>
-        {/* <section>
-          <div className=''>
-            <ScrollHeader/>
-          </div>
-        </section> */}
         <section id='casas'>
           <Scrolling_H/>
         </section>
-        <section className=''>
-          <div className='h-screen bg-myBackground'>
-            
-            <Present estiloPersonalizado='text-myWhite w-full h-screen flex-col mt-8 text-center font-sans pt-10 justify-center'/>
-            
-          </div>
+        <section>
           <section id='contacto'>
           <Contact/>
           </section>
-          <section>
+          <section id='contactanos_aqui'>
             <Contact_us/>
           </section >
-          {/* <section className='bg-white'>
-            <Carrusel_map/>
-          </section> */}
+          <div className='h-screen bg-myBackground'>
+            <Present estiloPersonalizado='text-myWhite w-full h-screen flex-col mt-8 text-center font-sans pt-10 justify-center'/>
+          </div>
         </section>
         <footer>
           <Footer/>
