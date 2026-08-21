@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'dr.savee-cdn.com',
+      },
+    ],
+  },
+}
 
 module.exports = nextConfig
-
-module.exports = {
-    images: {
-      domains: ['dr.savee-cdn.com'],
-    },
-  };

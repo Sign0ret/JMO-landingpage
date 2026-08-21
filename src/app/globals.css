@@ -1,6 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-myWhite: #ffffff;
+  --color-myBone: #ccc;
+  --color-myBlack: #000000;
+  --color-mySkin: #ac9c8d;
+  --color-myBackground: #000000;
+  --color-myGray: #141414;
+}
 
 #labs{
     font-size: 0.6rem;

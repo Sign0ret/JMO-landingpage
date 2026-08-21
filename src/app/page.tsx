@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { Navbar } from '@/components/component/navbar'
 import { VideoBackground } from '@/components/component/videoback'
 import { Present } from '@/components/component/present'
-import './globals.css'
 import { Typing } from '@/components/component/typing'
 import { Scrolling_H } from '@/components/component/scroll_hori'
 import { ComingSoon } from '@/components/component/coming_soon'
@@ -17,7 +16,7 @@ import Carrusel_map from '@/components/component/carrusel_map'
 
 export default function Home() {
   return (
-    <body className='bg-myBlack'>
+    <div className='bg-myBlack'>
       <main>
         <header className=''>
           <Navbar/>
@@ -50,6 +49,6 @@ export default function Home() {
           <Footer/>
         </footer>
       </main>
-    </body>
+    </div>
   )
 }
