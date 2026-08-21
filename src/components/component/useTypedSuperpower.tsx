@@ -29,6 +29,8 @@ export const useTypedSuperpower = (superpowers: string[]): {
                 )
         
                 if(nextTypedSuperPower === typedSuperpower) {
+                    // Transición intencional de fase del efecto tipo máquina de escribir
+                    // eslint-disable-next-line react-hooks/set-state-in-effect
                     setPhase(TypePhase.Pausing)
                     return
                 }

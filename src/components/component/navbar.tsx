@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "../ui/button";
+import NextLink from "next/link";
 import { Link } from "react-scroll";
 
 export const Navbar = () => {
@@ -15,12 +16,12 @@ export const Navbar = () => {
       <nav id="navbar">
         <div className="transition-all duration-500 shadow-md lg:shadow-none w-full left-0 right-0 top-0 fixed lg:top-5 lg:pr-52 lg:pl-52 z-40">
           <div className="md:flex items-center justify-between bg-black bg-opacity-15 py-4 md:px-10 px-2 backdrop-blur-sm">
-            <a href="/">
+            <NextLink href="/">
               <div className="font-bold text-xl flex items-center cursor-pointer font-[Poppins]">
                 <span className="text-white">JMO</span>
                 {/* <span id="labs" className="text-white size-5 text-xs md:ml-0.5 mr-6 ">LAB&apos;s</span> */}
               </div> 
-            </a>
+            </NextLink>
             <div onClick={()=>setOpen(!open)} className="absolute right-4 top-3 cursor-pointer md:hidden">
               <img src={open ? 'close-outline.svg' : 'menu-outline.svg'} alt="" className="h-8 w-8 "/>
             </div>
